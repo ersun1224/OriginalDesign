@@ -4,21 +4,32 @@ void setup()
 }
 void draw()
 {
-	frame();
+	car();
 }
-void frame()
+void car()
 {
+	noStroke();
+	fill(54,118,22);
+	beginShape();
+		vertex(20,400);	//bottom left
+		vertex(140,400); //left of left tire
+		vertex(200,340); //top of left tire
+		vertex(260,400); //right of left tire
+		vertex(540,400); //left of right tire
+		vertex(600,340); //top of right tire
+		vertex(660,400); //right of right tire
+		vertex(780,400); //bottom right
+		vertex(770,275); //middle right
+		vertex(600,260); //right of body
+		vertex(550,150); //top right of body
+		vertex(250,150); //top left of body
+		vertex(200,260); //left of body
+		vertex(30,275); //middle left
+	endShape();
+	fill(48,206,196);
+	quad(260,160,375,160,375,260,210,260);
 	fill(0);
 	ellipse(200, 400, 100, 100);
 	ellipse(600, 400, 100, 100);
-	fill(0,255,0);
-	beginShape();
-		vertex(s75,400);
-		vertex(250,275);
-		vertex(325,400);
-		vertex(575,400);
-		vertex(650,275);
-		vertex(725,400);
-		vertex(400,200);
-	endShape();
+
 }
