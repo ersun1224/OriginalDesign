@@ -8,6 +8,7 @@ void draw()
 }
 void car()
 {
+	background(225);
 	noStroke();
 	fill(54,118,22);
 	beginShape();
@@ -27,9 +28,13 @@ void car()
 		vertex(30,275); //middle left
 	endShape();
 	fill(48,206,196);
-	quad(260,160,375,160,375,260,210,260);
+	quad(260,160,395,160,395,260,210,260);
+	quad(405,160,540,160,590,260,405,260);
 	fill(0);
 	ellipse(200, 400, 100, 100);
 	ellipse(600, 400, 100, 100);
+	fill(191,191,191);
+	ellipse(200, 400, 65, 65);
+	ellipse(600, 400, 65, 65);
 
 }
