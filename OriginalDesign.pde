@@ -6,6 +6,8 @@ int speed = 1;
 void setup()
 {
 	size(800,500);
+	textAlign(CENTER);
+	textSize(30);
 }
 void draw()
 {
@@ -78,6 +80,9 @@ void scene()
 	{
 		x4 = -24;
 	}
+
+	fill(0);
+	text("Click to make the car go faster!",400,100);
 }
 
 void mousePressed()
